@@ -7,4 +7,4 @@ RUN git clone --depth 1 https://github.com/ElasticHQ/elasticsearch-HQ.git .
 RUN pip3 install -U -r requirements.txt && \
     pip3 install gunicorn
 EXPOSE 5000
-ENTRYPOINT ["/usr/bin7gunicorn", "-w", "1", "-b", "0.0.0.0:5000", "application:application"]
+ENTRYPOINT ["/usr/bin/gunicorn", "-w", "1", "-b", "0.0.0.0:5000", "application:application"]
