@@ -1,4 +1,4 @@
-FROM python:3.7-alpine3.8
+FROM python:3.7-alpine3.9
 RUN apk add --update --no-cache git && \
     apk add --no-cache --virtual .build-deps gcc libc-dev && \
     rm -rf /var/cache/apk/*
