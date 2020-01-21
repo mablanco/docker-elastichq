@@ -5,7 +5,6 @@ RUN apk add --update --no-cache git && \
     rm -rf /var/cache/apk/*
 WORKDIR /app
 RUN git clone --depth 1 https://github.com/ElasticHQ/elasticsearch-HQ -b $ELASTICHQ_VERSION .
-RUN pip3 install -U -r requirements.txt && \
-    pip3 install gunicorn
+RUN pip3 install -U -r requirements.txt
 EXPOSE 5000
 ENTRYPOINT ["/usr/local/bin/gunicorn", "-w", "1", "-b", "0.0.0.0:5000", "application:application"]
