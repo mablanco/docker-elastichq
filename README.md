@@ -7,6 +7,4 @@ This image uses a minimalistic approach. It's built upon Alpine Linux and launch
 
 This will start a ElasticHQ instance listening on port 5000:
 
-```
-$ docker run -d -p 5000:5000 --name elastichq mablanco/elastichq
-```
+    $ docker run -d -p 5000:5000 --name elastichq mablanco/elastichq
