@@ -1,3 +1,5 @@
+### :warning: This repository has been archived. The upstream developers have abandoned the project (<https://github.com/ElasticHQ/elasticsearch-HQ#this-project-is-no-longer-maintained-use-at-your-own-risk>).
+
 # docker-elastichq
 Docker image for ElasticHQ, a Monitoring and Management Web Application for ElasticSearch instances and clusters (<http://www.elastichq.org>).
 
