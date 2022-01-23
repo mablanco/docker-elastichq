@@ -1,6 +1,7 @@
-FROM python:3.9.1-alpine3.12
+FROM python:3.9.9-alpine3.15
 ARG ELASTICHQ_VERSION=v3.5.12
-RUN apk add --update --no-cache git && \
+RUN apk upgrade && \
+    apk add --no-cache git && \
     apk add --no-cache --virtual .build-deps build-base libffi-dev openssl-dev && \
     rm -rf /var/cache/apk/*
 WORKDIR /app
